@@ -13,25 +13,16 @@ Código escrito no Jupyter Notebook:
 - __OBJETIVO:__ - Facilitar o pré-processamento de textos ou palavras inicializando o objeto:
 
 # Bibliotecas Necessárias
-import pandas as pd
-import nltk
-import unicodedata
-import re
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem.snowball import SnowballStemmer
-from nltk.stem.wordnet import WordNetLemmatizer
+Pandas, nltk, unicodedata, re, nltk.corpus import stopwords, nltk.tokenize import word_tokenize, nltk.stem.snowball import SnowballStemmer, nltk.stem.wordnet e WordNetLemmatizer
 
 # Download Necessários
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+nltk.download('stopwords'), nltk.download('punkt'), nltk.download('wordnet')
 
 #### Criando o Objeto:
 - Aqui serão criadas as funções para cada etapa do projeto.
 
-class Pre_Processamento(object):
-    def __init__(self, arquivo):
+class Pre_Processamento(object):  
+    def __init__(self, arquivo):  
         self.arq = arquivo
 
     # Retorna o arquivo
@@ -67,15 +58,15 @@ class Pre_Processamento(object):
         #dados.getTxt_limpo()
         #dados.getTxt_dividir()
         #dados.getRemove_palavras()
-        dados.getRaiz_verbo()
+        dados.getRaiz_verbo()  
 
 # Passando o parâmetro
-arquivo = "Edcarlos Oliveira"
+arquivo = "Edcarlos Oliveira"  
 
 # Iniciando o objeto
-if __name__ == '__main__':
-    dados = Pre_Processamento(arquivo)
-    print(dados.main())
+if __name__ == '__main__':  
+    dados = Pre_Processamento(arquivo)  
+    print(dados.main())  
 	
 #### Autor:
 - __*Edcarlos Oliveira*__
