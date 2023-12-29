@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(40, 40, 136);
+}
+body {
+    background: url('../static/img/fundo_ia.jpg') no-repeat top center;
+    background-color: cover;
+    background-attachment: fixed;
+}
+main {
+    position: relative;
+    height: 100vh;
+}
+.tablet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 980px;
+    width: 642px;
+    background-color: blue;
+    background: url("../static/img/tablet.jpg") no-repeat;
+}
+iframe#tela {
+    position: relative;
+    top: 333px;
+    left: 163px;
+    width: 316px;
+    height: 410px;
+}
+.rodape {
+    text-align: center;
+    padding-top: 35%;
+}
+.rodape a img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .3s;
+    border: 1s;
+}

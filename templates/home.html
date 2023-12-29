@@ -1,0 +1,60 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<style>
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    h4 {
+        text-align: center;
+        color:white;
+    }
+    h5 {
+        padding-top: 25px;
+        padding-left: 10px;
+        color: yellow;
+    }
+    label#txt {
+        color: white;
+        margin: 10px;
+    }
+    input#sub {
+        background-color: aqua;
+        padding: 5px;
+        margin-top: 14px;
+        margin-left: 35%;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 35%;
+    }
+    input#sub:hover {
+        background-color: white;
+    }
+    .autor {
+        color: white;
+        font-weight: bold;
+    }
+</style>
+
+<h1>Seja Bem Vindo!!!</h1><br>
+<h4>Alterar Currículo</h4><br>
+
+<form action="{{url_for('home')}}" method="post">
+    <label for="arq" id="txt">Cole Aqui:</label>
+    <input type="text" name="arq"><br><br>
+    <input type="submit" id="sub" value="Alterar">
+</form>
+<h5>Dica:
+    <p>Altere só a síntese ou resumo das qualificações.</p>
+</h5>
+
+<footer class="rodape">
+    <a href="{{url_for('home')}}" target="tela"><img src="{{url_for('static', filename='img/home.png')}}" alt="Home"></a>
+    <a href="https://www.linkedin.com/in/edcarlos-oliveira" target="_blank"><img src="{{url_for('static', filename='img/Linkedin.png')}}" alt="Linkedin"></a>
+    <a href="https://github.com/Edcarlos-Oliveira" target="_blank"><img src="{{url_for('static', filename='img/GitHub.png')}}" alt="GitHub"></a>
+    <a href="{{url_for('info')}}" target="tela"><img src="{{url_for('static', filename='img/info.png')}}" alt="Informação"></a>
+</footer>
+<p class="autor">Autor: Edcarlos Oliveira</p>
+
+{% endblock %}

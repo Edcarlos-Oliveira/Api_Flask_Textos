@@ -1,0 +1,53 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<style>
+    .inst {
+        background-color: white;
+        padding: 10px;
+        height: 95vh;
+    }
+    ul#lista1 {
+        padding-left: 15px;
+    }
+    ul#lista2 {
+        padding-left: 15px;
+    }
+    input#btn {
+        color: white;
+        font-weight: bold;
+        margin-top: 20px;
+        background-color: blue;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    input#btn:hover {
+        color: black;
+        background-color: aqua;
+    }
+</style>
+<section class="inst">
+<h4>Instruções de uso:</h4><br>
+<ul id="lista1">
+    <li>Cole a Síntese das Qualificações no campo indicado;</li>
+    <li>Não cole os dados como:
+        <ul>
+            <li>Cabeçalho;</li>
+            <li>Nomes;</li>
+            <li>Formação Acadêmica e;</li>
+            <li>Cursos Realizados.</li>
+        </ul>
+    </li>
+</ul><br>
+
+<h4>Alertas:</h4><br>
+<ul id="lista2">
+    <li>Não coletamos nenhum dado;</li>
+    <li>O uso é gratuito;</li>
+    <li>App construído para facilitar a simplificação do currículo na linguagem de máquinas;</li>
+    <li>Pode ser divulgado, alterado e usado para outros fins dando os créditos ao Autor.</li>
+</ul>
+<a href="{{url_for('home')}}" target="tela"><input type="button" id="btn" value="Voltar"></a>
+</section>
+{% endblock %}
